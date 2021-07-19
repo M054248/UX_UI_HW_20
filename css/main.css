@@ -228,12 +228,16 @@ h1.name {
 .box {
     /* justify-content: center; */
     /* vertical-align: top; */
+    display:flex;
+    justify-content: center;
     position:relative;
-    vertical-align: top;
+    vertical-align: middle;
+    position: relative;
     top: 90px;
-    left:20px;
+    /* vertical-align: top;
+    left:20px; */
     height:auto;
-    width:auto;
+    width:100%;
     min-width:100px;
     max-width: 600px;
     border-radius: 10%;
@@ -241,6 +245,13 @@ h1.name {
     margin: 10px;
     z-index: +100;
     mix-blend-mode:multiply;
+}
+.ventext {
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    width:100%;
+    height:auto; 
 }
 [class^='ci'] {
     background-color: gray;
@@ -266,91 +277,108 @@ h1.name {
 .circle3 {
     background-color: rgba(255,171,157,1) ;
     -webkit-animation: ci3 4s ease-in-out infinite alternate;
-    animation: ci3 4s ease-in-out infinite alternate;
-    animation-delay: 2s;
+    animation: ci3 6s ease-in-out infinite alternate;
 }
 @-webkit-keyframes ci1 {
     from {
         transform: translate(-10%, 10%);
+        animation:2s;
         /* border:2px solid blue; */
     }
     to {
         transform: translate(0, 5%);
         border:2px solid black;
+        animation: 3s;
     }
     to {
         transform: translate(0, 1%);
         border:2px solid black;
+        animation: 1s;
     }
 }
 @keyframes ci1 {
     from {
         transform: translate(-10%, 10%);
+        animation: 2s;
         /* border:2px solid blue; */
     }
     to {
         transform: translate(0, 5%);
         border:2px solid black;
+        animation: 3s;
     }
     to {
         transform: translate(0, 1%);
         border:2px solid black;
+        animation: 1s;
     }
 }
 @-webkit-keyframes ci2 {
     from {
         transform: translate(0, -20%);
+        animation:2s;
         /* border:2px solid gold; */
     }
     to {
         transform: translate(-5%, 0);
         border:2px solid black;
+        animation: 3s;
     }
     to {
         transform: translate(-1%, 0);
         border:2px solid black;
+        animation: 1s;
     }
 }
 @keyframes ci2 {
     from {
         transform: translate(0, -20%);
+        animation:2s;
         /* border:2px solid gold; */
     }
     to {
         transform: translate(-5%, 0);
         border:2px solid black;
+        animation: 3s;
     }
     to {
         transform: translate(-1%, 0);
         border:2px solid black;
+        animation: 1s;
     }
 }
 @-webkit-keyframes ci3 {
     from {
-        transform: translate(30%, 30%);
+        transform: translate(15%, 20%);
+        animation:2s;
         /* border:2px solid red; */
     }
     to {
         transform: translate(0, 0);
         border:2px solid black;
+        animation: 3s;
     }
     to {
         transform: translate(0, 1);
         border:2px solid black;
+        animation: 1s;
     }
 }
 @keyframes ci3 {
     from {
-        transform: translate(30%, 30%);
+        transform: translate(15%, 20%);
+        animation:2s;
         /* border:2px solid red; */
     }
     to {
         transform: translate(0, 0);
         border:2px solid black;
+        animation: 3s;
     }
     to {
         transform: translate(0, 1);
         border:2px solid black;
+        animation: 1s;
     }
 }
 
@@ -363,7 +391,7 @@ div.content{
     overflow-x: hidden !important; 
 }
 content {
-    display:inline-flex;
+    display:flex;
     margin:0;
     padding:0;
     border-top:2px solid black !important;
@@ -377,7 +405,8 @@ content {
     box-shadow: 0px 10px 100px #becdd7;
 }
 div.content-left {
-    width:40vw;
+   display: flex;
+    /* width:40vw; */
     /* flex:3; */
     /* grid-area:'content-left'; */
     justify-content: right;
@@ -388,7 +417,7 @@ div.content-left {
     margin:0%;
     border-top:3px black !important;
     line-height: 2em;
-    min-width: 725px;
+    min-width:725px;
 }
 .me {
     vertical-align: top;
