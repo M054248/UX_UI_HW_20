@@ -9,9 +9,6 @@
     --R100:rgba(255,171,157,1) !important;
     --C100:(#3B4248)!important;
 }
-/* html, body {
-    background-color: var(--red);
-}  */
 
 html, body{
     height: auto;
@@ -24,19 +21,10 @@ body {
     background-image: url("../images/blue-graph-paper.jpg");
     background-repeat: repeat;
     background-attachment: fixed;
-    background-size:1000px;
+    background-size:80px;
     background-color:white;
     overflow-x: hidden !important;
 }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -83,34 +71,31 @@ h1.name {
     display: inline-flex;
     flex-direction: row;
     padding-right:60px;
-    align-content: right;
-    text-align: left;
-    cursor:pointer !important;
-    cursor: auto;
-    justify-content: flex-end;
+    align-content: center;
+    text-align: center;
+    flex-wrap: nowrap;
 }
-    
+
+
+
+/* HEADER NAVIGATION BUTTON ANIMATION START */
 .nav {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
     text-decoration: none;
-    color: var(--C100);
+    color: black;
     position: relative;
     display: inline-flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    padding: 19px 22px;
+    padding: 19px 23px;
     transition: all 0.2s ease;
-    cursor:pointer;
-    cursor: auto;
+    cursor:pointer !important;
+    margin-left: 10px;
 }
-
-/* HEADER NAVIGATION ANIMATION START*/
 #about:before {
     content: "";
     position: absolute;
     top: 0;
-    left: 0;
+    left: 5px;
     display: block;
     border-radius: 28px;
     background: rgba(182, 255, 157, 0.5) !important;
@@ -118,14 +103,14 @@ h1.name {
     height: 56px;
     transition: all 0.3s ease;
     text-decoration: none;
-    cursor:pointer;
-    cursor: auto;
+    cursor:pointer !important;
+    flex-wrap: nowrap;
 }
 #skills:before {
     content: "";
     position: absolute;
     top: 0;
-    left: 0;
+    left: 5px;
     display: block;
     border-radius: 28px;
     background: rgba(157, 217, 255, 0.5) !important;
@@ -133,14 +118,14 @@ h1.name {
     height: 56px;
     transition: all 0.3s ease;
     text-decoration: none;
-    cursor:pointer;
-    cursor: auto;
+    cursor:pointer !important;
+    flex-wrap: nowrap;
 }
 #work:before {
     content: "";
     position: absolute;
     top: 0;
-    left: 0;
+    left: 5px;
     display: block;
     border-radius: 28px;
     background: rgba(255, 252, 157, 0.5);
@@ -148,14 +133,14 @@ h1.name {
     height: 56px;
     transition: all 0.3s ease;
     text-decoration: none;
-    cursor:pointer;
-    cursor: auto;
+    cursor:pointer !important;
+    flex-wrap: nowrap;
 }
 #contact:before {
     content: "";
     position: absolute;
     top: 0;
-    left: 0;
+    left: 5px;
     display: block;
     border-radius: 28px;
     background: rgba(255,171,157, 0.5) !important;
@@ -163,23 +148,23 @@ h1.name {
     height: 56px;
     transition: all 0.3s ease;
     text-decoration: none;
-    cursor:pointer;
-    cursor: auto;
+    cursor:pointer !important;
+    flex-wrap: nowrap;
 }
 .nav span {
     position: relative;
-    font-size: 16px;
-    line-height: 18px;
-    font-weight: 900;
-    letter-spacing: 0.25em;
+    font-size: 18pt !important;
+    letter-spacing: 0.1em;
+    line-height: 90%;
     text-transform: uppercase;
     vertical-align: middle;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    cursor:pointer;
-    cursor: auto;
-    max-width: 150px;
+    cursor:pointer !important;
+    max-width: 160px;
+    padding-left: 10px;
+    flex-wrap: nowrap;
 }
 /* .nav svg {
     position: relative;
@@ -196,28 +181,28 @@ h1.name {
     cursor: auto;
 } */
 #about:hover:before {
-    width: 95%;
+    width: 100%;
     background: rgba(182, 255, 157,1) !important;
 }
 #skills:hover:before {
-    width: 95%;
+    width: 100%;
     background: rgba(157, 217, 255,1) !important;
 }
 #work:hover:before {
-    width: 95%;
+    width: 100%;
     background: rgba(255, 252, 157,1) !important;
 }
 #contact:hover:before {
-    width: 95%;
+    width: 100%;
     background:rgba(255,171,157,1) !important;
 }
 .nav:hover {
     transform: translateX(0);
 }
 .nav:active {
-    transform:scale(0.96);
+    transform:scale(1);
 }
-/* HEADER NAVIGATION ANIMATION END*/
+/* HEADER NAVIGATION BUTTON ANIMATION END */
 
 /* HEADER SECTION END*/
 
@@ -225,7 +210,10 @@ h1.name {
 
 
 
-/* CONTENT SECTION START*/
+/* CONTENT SECTION START */
+
+
+/* VEN DIAGRAM ANNIMATION START */
 .box {
     /* justify-content: center; */
     /* vertical-align: top; */
@@ -235,9 +223,7 @@ h1.name {
     vertical-align: middle;
     position: relative;
     top: 90px;
-    /* vertical-align: top;
-    left:20px; */
-    height:auto;
+    height:fit-content;
     width:100%;
     min-width:100px;
     max-width: 600px;
@@ -256,7 +242,7 @@ h1.name {
     justify-content:center;
     text-align: center;
     width:100%;
-    height:auto;
+    height:fit-content;
     position: relative;
     top: 175px; 
     padding: 10px;
@@ -274,13 +260,11 @@ h1.name {
     background-color: rgba(157, 217, 255,1);
     -webkit-animation: ci1 4s ease-in-out infinite alternate;
     animation: ci1 4s ease-in-out infinite alternate;
-    animation-delay: 2s;        
 }
 .circle2 {
     background-color: rgba(255, 252, 157,1);
     -webkit-animation: ci2 4s ease-in-out infinite alternate;
     animation: ci2 4s ease-in-out infinite alternate;
-    animation-delay: 2s;
 }
 .circle3 {
     background-color: rgba(255,171,157,1) ;
@@ -389,7 +373,7 @@ h1.name {
         animation: 1s;
     }
 }
-
+/* VEN DIAGRAM ANNIMATION END */
 
 
 
@@ -402,7 +386,8 @@ content {
     display:flex;
     margin:0;
     padding:0;
-    border-top:2px solid black !important;
+    /* border-top:2px solid black !important;
+    border-bottom:2px solid black !important; */
     align-items:top;
     align-content: center;
     justify-content: center;
@@ -410,6 +395,9 @@ content {
     background-color:white;
     flex-direction: row;
     box-shadow: 0px 10px 100px #becdd7;
+    /* border-bottom-left-radius:10%;
+    border-bottom-right-radius:10%; */
+    border-radius: 5em / 5em;
 }
 div.content-left {
     display: flex;
@@ -442,7 +430,6 @@ div.content-left {
     object-fit: cover;
     object-position: center;
 }
-
 div.content-right {
     width:60vw;
     display:flex;
@@ -460,7 +447,6 @@ div.content-right {
     /* padding-left: 100px; */
     /* height: fit-content(1em); */
 }
-
 div.content-right p {
     margin-bottom:60px;
 }
@@ -472,30 +458,31 @@ div.content-right h1{
     justify-self: left !important;
     justify-content: left !important;
 }
-div.content-right button{
-    /* text-align: center !important;
-    justify-content:center !important;
-    align-items: center !important;
-    align-content:center !important; */
-}
-
-button{
-    /* text-align: center !important;
-    margin:auto; */
+.content-button {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: 16px;
-    line-height: 18px;
-    padding: 15px 25px;
-    border-radius: 5em;
     font-size: 18pt;
-    font-weight: bold;
+    letter-spacing: .1em;
+    padding: 15px 25px;
+    border-radius: 50px;
+    font-size: 18pt;
     color:black;
     background:rgba(250, 128, 114, 0.605);
-    border:none;
+    background-image: url(../images/blue-graph-paper.jpg);
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size:80px;
+    border:2px solid black;
     text-transform:uppercase;
-   
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
+.content-button:hover{
+    background-blend-mode: multiply;
+    box-glow:0 0 30px rgba(182, 255, 157, 0.5);
+}
+
+
 /* CONTENT SECTION END*/
 
 
@@ -508,45 +495,73 @@ footer {
     height: 150px;
     width: 100vw;
     margin: 0%;
-    cursor:pointer;
-    cursor: auto;
-    overflow-x: hidden !important;
-}
-.footer ul {
-    display:inline-flex;
-    font-weight: 700;
-    list-style-type: none;
     margin-top: 50px;
 }
-.footer il{
-    flex:1;
+.footer ul {
+    list-style-type: none;
+}
+.footer li{
+    display:inline-block
+}
+.footer a {
     font-size: 18pt;
-    font-weight: 900;
-    letter-spacing: 0.25em;
+    font-weight: 400;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
-    text-align: left;
-    font-weight: 700;
-    color: black;
-    cursor:pointer;
-    cursor: auto;
+    padding: 10px 15px 10px 15px;
+    cursor:pointer !important;
+    text-decoration: none;
+    color:black;
 }
-.footer span {
-    flex:1;
-    position: relative;
-    float: left;
-    padding-right: 20px;
+.link-text {
+    display:block;
+    text-decoration: none;
+    color:black;
+    font-size: 18pt;
+    font-weight:400;
+    transition: all 0.3s ease-in-out;
 }
-span .link-text{
-    cursor: pointer;
-    cursor: auto;
+.link-text:link {
+    cursor:pointer !important;
+    text-decoration: none;
+    color:black; 
+    font-weight: 600;
 }
+.link-text:visited {
+    cursor:pointer !important;
+    text-decoration: none;
+    color:black; 
+}
+.link-text:hover{
+    cursor:pointer !important;
+    padding: 10px 0px 10px 0px;
+    text-decoration: underline dotted black!important;
+    color:black;
+    font-weight: 600 !important;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 10px 15px 10px 15px;
+} 
+.link-text:active {
+    cursor:pointer !important;
+    text-decoration: none;
+    color:black;     
+}
+/* .link-text li:hover{
+    font-size: 20px;
+    font-weight: 900;
+} */
 /* FOOTER SECTION END*/
 
 
 
 
+
+
+
+
 /* MEDIA QUERY START*/
-@media(max-width:1185px) {
+@media (max-width:1000px) {
     div.header {
     height: auto !important;
     width:100vw !important;
@@ -571,7 +586,6 @@ img.drawing {
     display:block;
     position:relative;
     top:20px;
-
 }
 .name {
     display:flex !important;
