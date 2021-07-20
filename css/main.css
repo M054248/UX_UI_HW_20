@@ -609,25 +609,30 @@ img.drawing {
     white-space:nowrap;
     max-width: 140px;
 }
-
+.content-right, .content-left{
+    float:right;
+    clear:both !important;
+}
 content{
     display:flex !important; 
     flex-direction: column !important;
     background-color:#ffffff;
+    position:relative;
     /* Margin: 0px 50px 5px 50px !important; */
     height: fit-content !important;
     width: 100% !important;
     align-items: center !important;
-    justify-content: center !important;
-    /* min-height:500px; */
+    justify-content: space-around !important;
     background-color:white;
-    /* overflow:hidden;
-    clear: both; */
     box-shadow: 0px 10px 100px #becdd7;
+    flex-wrap: wrap;
+    box-sizing: border-box;
     }
+
 div.content-right{
     display:flex;
     flex-direction: column !important;
+    justify-content: space-around !important;
     position: relative;
     align-content: baseline;
     Margin: 0px 50px 0px 50px !important;
@@ -636,9 +641,11 @@ div.content-right{
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 10px;
+    box-sizing: border-box;
 }
 div.content-left{
     flex-direction: column !important;
+    justify-content: space-around !important;
     align-content: center !important;
     display:flex;
     Margin: 0px 50px 0px 50px !important;
@@ -647,22 +654,24 @@ div.content-left{
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 10px;
+    box-sizing: border-box;
 }
 .name{
     visibility: hidden;
 }
 .box {
+    display:flex;
     justify-content: center;
     position:relative;
     top:auto;
     height:auto !important;
     width:80% !important;
-    max-width:500px !important;
+    /* max-width:500px !important; */
     background-color:white;
     border-radius: 50%;
     padding: 2px;
     margin: 0px 20px 0px 20px !important;
-    z-index: +100;
+    z-index: +5;
     object-fit: cover;
     object-position: center;
 }
@@ -679,7 +688,7 @@ div.content-left{
     border-width: 2px;
     padding: 2px;
     margin: 0px 20px 0px 20px !important;
-    z-index: +100;
+    z-index: +5;
     object-fit: cover;
     object-position: center;
 }
