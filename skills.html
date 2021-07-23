@@ -51,6 +51,10 @@
         </div>
     </header>
 
+    <content-top>
+        <div></div>
+    </content-top>
+
     <content>    
         <div class="content-left">
             <div class="box">
@@ -62,10 +66,16 @@
         </div>
         <div class="content-right">
             <h1>Skills</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda dolore esse optio quod reprehenderit aliquid id, laborum nisi praesentium voluptas quibusdam, quis ipsum neque in veritatis, doloribus fugiat aut. Nam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda dolore esse optio quod reprehenderit aliquid id, laborum nisi praesentium voluptas quibusdam, quis ipsum neque in veritatis, doloribus fugiat aut. Nam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda dolore esse optio quod reprehenderit aliquid id, laborum nisi praesentium voluptas quibusdam, quis ipsum neque in veritatis, doloribus fugiat aut. Nam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda dolore esse optio quod reprehenderit aliquid id, laborum nisi praesentium voluptas quibusdam, quis ipsum neque in veritatis, doloribus fugiat aut. Nam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda dolore esse optio quod reprehenderit aliquid id, laborum nisi praesentium voluptas quibusdam, quis ipsum neque in veritatis, doloribus fugiat aut. Nam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda dolore esse optio quod reprehenderit aliquid id, laborum nisi praesentium voluptas quibusdam, quis ipsum neque in veritatis, doloribus fugiat aut. Nam.</p>
+            <div id=blue-skill><h2>Visual Design & Marketing:</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda dolore esse optio quod reprehenderit aliquid id, laborum nisi praesentium voluptas quibusdam, quis ipsum neque in veritatis, doloribus fugiat aut.</p></div>
+            <div id=yellow-skill><h2>Consultative Sales & Customer Service:</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda dolore esse optio quod reprehenderit aliquid id, laborum nisi praesentium voluptas quibusdam, quis ipsum neque in veritatis, doloribus fugiat aut.</p></div>
+            <div id=red-skill><h2>International Upbrining:</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda dolore esse optio quod reprehenderit aliquid id, laborum nisi praesentium voluptas quibusdam, quis ipsum neque in veritatis, doloribus fugiat aut.</p></div>
             <button class=content-button style="background-color: rgba(255, 252, 157,1)" !important>View Case Studies</button>
         </div>
     </content>
+
+    <content-bottom>
+        <div></div>
+    </content-bottom>
 
     <footer>
         <div class="footer">
@@ -73,10 +83,46 @@
                 <li><a class="link-text" href="index.html">ABOuT ME</a></li>
                 <li><a class="link-text" href="skills.html">MY SKILLS</a></li>
                 <li><a class="link-text" href="#work">MY WORK</a></li>
-                <li><a class="link-text" href="#contact">CONTACT</a></li>
+                <li><a class="link-text" href="#" id="test">CONTACT</a></li>
             </ul>
         </div>
     </footer>
 
+    <div id="contactform">
+        <form id="contact-form" class="contact-form" action="#" method="post">
+          <h1>Call me at (407) 701-0573 or<br>use the form below for an email:</h1>
+          <ul>
+            <li class="comment">
+              <!--Tip: textarea breaks if tags are not in the same line or broken up somehow -->
+              <textarea class="text-comment" rows="2" id="text" spellcheck="false" placeholder="Say something." min-length="2" max-length="500" required></textarea>
+              <label for="message">Message</label>
+              <span class="notification"></span>
+              <span class="required"><strong><small><em> (required)</em></small></strong></span>
+              <span class="char-counter"></span>
+            </li>
+            <li class="name">
+              <input type="text" class="input-name" name="name" placeholder="ie. Joe McDoodle" spellcheck="false" min-length="2" max-length="40" required />
+              <label for="name">Name</label>
+              <span class="notification"></span>
+              <span class="required"><strong><small><em> (required)</em></small></strong></span>
+              <span class="char-counter"></span>
+            </li>
+            <li class="email">
+              <input type="email" class="input-email" name="email" placeholder="ie. my@email.com" spellcheck="false" min-length="2" max-length="30" required />
+              <label for="email">Email</label>
+              <span class="notification"></span>
+              <span class="required"><strong><small><em> (required)</em></small></strong></span>
+              <span class="char-counter"></span>
+            </li>
+          </ul>
+          <!-- Submit -->
+          <div class="form-btn">
+            <input id="input-submit" class="input-submit" type="submit" value="Submit" id="submit" />
+          </div>
+        </form>
+      </div>
+
+    
+    <script src="js/my_js.js"></script>
 </body>
 </html>
