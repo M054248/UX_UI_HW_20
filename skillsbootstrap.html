@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- MY CSS -->
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <!-- MONTSERRAT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<title>SKILLS</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="logotitle">
+                <img class="drawing" src="images/line portrait.jpeg" alt="logo">
+                <h2 class="name" id="header" >Mark Malcolm<br>UX/UI Designer</h2>
+            </div>
+            <div class="navbar" id="header">
+                <a class="nav" id="about" href="index.html">
+                    <span>ABOUT ME</span>
+                </a>
+                <a class="nav" id="skills" href="skills.html" style="font-weight:100" !important>
+                    <span style="font-weight:300" !important>MY SKILLS</span>
+                </a>
+                <br>
+                <a class="nav" id="work" href="casestudy.html" style="font-weight:100" !important>
+                    <span style="font-weight:300" !important>MY WORK</span>
+                </a>
+                <a class="nav" id="contact" href="#contact" style="font-weight:100" !important>
+                    <span style="font-weight:300" !important>CONTACT</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <content-top>
+        <div></div>
+    </content-top>
+
+    <content> 
+        
+        <div class="content-left"></div>
+            <!-- <div class="roundimgs">
+                <div class="numberCircle">A<h2 id=num>1</h2></div>
+                <div class="numberCircle">B<h2 id=num>2</h2></div>
+                <div class="numberCircle">C<h2 id=num>3</h2></div>
+                <div class="numberCircle">D<div id=num>4</div></div>
+            </div> -->
+        <div class="content-right">
+            <h1>Skills</h1>
+            <button class=content-button style="background-color: rgba(255, 252, 157,1)" !important>View Case Studies</button>
+        </div>
+    </content>
+
+    <content-bottom>
+        <div></div>
+    </content-bottom>
+
+    <footer>
+        <div class="footer">
+            <ul id=nav-footer>
+                <li><a class="link-text" href="index.html">ABOuT ME</a></li>
+                <li><a class="link-text" href="skills.html">MY SKILLS</a></li>
+                <li><a class="link-text" href="casestudy.html">MY WORK</a></li>
+                <li><a class="link-text" href="#" id="test">CONTACT</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <div id="contactform">
+        <form id="contact-form" class="contact-form" action="#" method="post">
+          <h1>Call me at (407) 701-0573 or<br>use the form below for an email:</h1>
+          <ul>
+            <li class="comment">
+              <!--Tip: textarea breaks if tags are not in the same line or broken up somehow -->
+              <textarea class="text-comment" rows="2" id="text" spellcheck="false" placeholder="Say something." min-length="2" max-length="500" required></textarea>
+              <label for="message">Message</label>
+              <span class="notification"></span>
+              <span class="required"><strong><small><em> (required)</em></small></strong></span>
+              <span class="char-counter"></span>
+            </li>
+            <li class="name">
+              <input type="text" class="input-name" name="name" placeholder="ie. Joe McDoodle" spellcheck="false" min-length="2" max-length="40" required />
+              <label for="name">Name</label>
+              <span class="notification"></span>
+              <span class="required"><strong><small><em> (required)</em></small></strong></span>
+              <span class="char-counter"></span>
+            </li>
+            <li class="email">
+              <input type="email" class="input-email" name="email" placeholder="ie. my@email.com" spellcheck="false" min-length="2" max-length="30" required />
+              <label for="email">Email</label>
+              <span class="notification"></span>
+              <span class="required"><strong><small><em> (required)</em></small></strong></span>
+              <span class="char-counter"></span>
+            </li>
+          </ul>
+          <!-- Submit -->
+          <div class="form-btn">
+            <input id="input-submit" class="input-submit" type="submit" value="Submit" id="submit" />
+          </div>
+        </form>
+      </div>
+
+    <!-- BOOTSTRAP BUNDLE -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- MY JAVASCRIPT -->
+    <script src="js/my_js.js"></script>
+</body>
+</html>
