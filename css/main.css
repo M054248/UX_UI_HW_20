@@ -71,8 +71,8 @@ h1.name {
     display: inline-flex;
     flex-direction: row;
     padding-right:60px;
-    align-content: center;
-    text-align: center;
+    align-content: center !important;
+    text-align: center !important;
     flex-wrap: nowrap;
 }
 
@@ -85,7 +85,7 @@ h1.name {
     position: relative;
     display: inline-flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: nowrap !important;
     padding: 19px 23px;
     transition: all 0.2s ease;
     cursor:pointer !important;
@@ -104,7 +104,7 @@ h1.name {
     transition: all 0.3s ease;
     text-decoration: none;
     cursor:pointer !important;
-    flex-wrap: nowrap;
+    flex-wrap: nowrap !important;
 }
 #skills:before {
     content: "";
@@ -354,6 +354,10 @@ h1.name {
 /* VEN DIAGRAM ANNIMATION END */
 
 
+
+
+
+
 content-top {
     display:flex;
     position: relative;
@@ -376,6 +380,9 @@ content {
     background-color:white;
     flex-direction: row;
     z-index: +10;
+}
+.card{
+    margin:30px;
 }
 content-bottom{
     display:flex;
@@ -400,8 +407,46 @@ div.content-left {
     top: 0px;
     padding:2px;
     margin:3%;
-
 }
+
+
+
+/* IMAGE CIRCLES */
+.roundimgs {
+    display:flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+.numbercircle {
+    display:flex;
+    background-color: gray;
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    padding: 8px;
+    background: #fff;
+    border: 2px solid darkred;
+    color:red;
+    text-align: center;
+    font: 32px Arial, sans-serif;
+}
+#num{
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    padding: 8px;
+    background: #fff;
+    border: 2px solid darkred;
+    color:red;
+    text-align: center;
+    font: 32px Arial, sans-serif;
+}
+
+
+
+
+
+
 .me {
     object-fit: contain;
     vertical-align: top;
