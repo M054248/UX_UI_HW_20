@@ -53,7 +53,7 @@ div.logotitle{
     width:100%;
     max-width: 150px;
     min-width:80px;
-    border:thick double black;
+    border: 2px solid black;
     border-radius: 50%;
     background-color: white;
     overflow: hidden;
