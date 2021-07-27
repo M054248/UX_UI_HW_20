@@ -32,7 +32,7 @@
                     </svg> -->
                 </a>
                 <br>
-                <a class="nav" id="work" href="work.html">
+                <a class="nav" id="work" href="casestudy.html">
                     <span style="font-weight:300" !important>MY WORK</span>
                     <!-- <svg width="13px" height="10px" viewBox="0 0 13 10">
                         <path d="M1,5 L11,5"></path>
@@ -40,7 +40,7 @@
                     </svg> -->
                 </a>
 <br>
-                <a class="nav" id="contact" href="contact.html">
+                <a class="nav" id="contact" href="">
                     <span style="font-weight:300" !important>CONTACT</span>
                     <!-- <svg width="10px" height="10px" viewBox="0 0 10 10">
                         <path d="M1,5 L11,5"></path>
@@ -83,46 +83,26 @@
                 <li><a class="link-text" href="index.html">ABOuT ME</a></li>
                 <li><a class="link-text" href="skills.html">MY SKILLS</a></li>
                 <li><a class="link-text" href="#work">MY WORK</a></li>
-                <li><a class="link-text" href="#" id="test">CONTACT</a></li>
+                <li><a class="link-text" href="" id="test">CONTACT</a></li>
             </ul>
         </div>
     </footer>
 
-    <div id="contactform">
-        <form id="contact-form" class="contact-form" action="#" method="post">
-          <h1>Call me at (407) 701-0573 or<br>use the form below for an email:</h1>
-          <ul>
-            <li class="comment">
-              <!--Tip: textarea breaks if tags are not in the same line or broken up somehow -->
-              <textarea class="text-comment" rows="2" id="text" spellcheck="false" placeholder="Say something." min-length="2" max-length="500" required></textarea>
-              <label for="message">Message</label>
-              <span class="notification"></span>
-              <span class="required"><strong><small><em> (required)</em></small></strong></span>
-              <span class="char-counter"></span>
-            </li>
-            <li class="name">
-              <input type="text" class="input-name" name="name" placeholder="ie. Joe McDoodle" spellcheck="false" min-length="2" max-length="40" required />
-              <label for="name">Name</label>
-              <span class="notification"></span>
-              <span class="required"><strong><small><em> (required)</em></small></strong></span>
-              <span class="char-counter"></span>
-            </li>
-            <li class="email">
-              <input type="email" class="input-email" name="email" placeholder="ie. my@email.com" spellcheck="false" min-length="2" max-length="30" required />
-              <label for="email">Email</label>
-              <span class="notification"></span>
-              <span class="required"><strong><small><em> (required)</em></small></strong></span>
-              <span class="char-counter"></span>
-            </li>
-          </ul>
-          <!-- Submit -->
-          <div class="form-btn">
-            <input id="input-submit" class="input-submit" type="submit" value="Submit" id="submit" />
-          </div>
+<div class="bg-modal">
+    <div class="modal-content">
+        <div class="close">+</div>
+        <div>Call or text me at (407) 701-0573 or<br>use the form below to send an email:</div>
+        <form action="mailto:MarkLovesKara@gmail.com" method="post" enctype="text/plain">
+            <input type="text" placeholder=" Name">
+            <input type="text" placeholder=" E-Mail">
+            <textarea rows=5 placeholder=" Message"></textarea>
+            <a href="" id=submit class=content-button>SEND</a>
         </form>
-      </div>
+    </div>
+</div>
+        
 
     
-    <script src="js/my_js.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
