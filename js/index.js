@@ -1,9 +1,9 @@
-// document.getElementById('contact').addEventListener('click', 
+// document.getElementById('test').addEventListener('click', 
 // function() {
 //     document.querySelector('.bg-modal').style.display = 'flex';
 // });
 
-document.getElementById('test').addEventListener('click', 
+document.getElementById('contact').addEventListener('click', 
 function() {
     document.querySelector('.bg-modal').style.display = 'flex';
 });
