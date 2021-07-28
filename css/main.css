@@ -800,7 +800,7 @@ textarea{
 
 
 /* MEDIA QUERY START*/
-@media (max-width:1000px) {
+@media (max-width:1172px) {
     div.header {
     height: auto !important;
     width:100vw !important;
