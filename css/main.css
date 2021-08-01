@@ -166,7 +166,7 @@ h1.name {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     cursor:pointer !important;
-    max-width: 160px;
+    max-width: 190px;
     padding-left: 10px;
     flex-wrap: nowrap;
 }
@@ -806,11 +806,13 @@ textarea{
     width:100vw !important;
     overflow: auto !important;
     display:flex !important;
-    flex-direction: row /*!important*/;
+    flex-direction: column /*!important*/;
     justify-content: center !important;
-    align-items: flex-start !important;
+    /* align-items: flex-start !important; */
 }
 div.logotitle{
+    display: flex;
+    justify-content: center;
     flex-direction: column !important;
 }
 img.drawing {
@@ -822,7 +824,7 @@ img.drawing {
     border-radius: 50%;
     background-color: white;
     overflow: hidden;
-    display:block;
+    display:none;
     position:relative;
     top:20px;
 }
@@ -830,18 +832,18 @@ img.drawing {
     display:flex !important;
     flex-direction:column !important;
     text-align: center !important;
-    padding-bottom: 50px !important;
+    padding-top: 40px !important;
     margin: 5px;
     font-family: 'Montserrat', sans-serif;
-    font-size:0 !important;
-    height:0 !important;
+    /* font-size:0 !important;
+    height:0 !important; */
     }
 .navbar{
     display:flex !important;
     /* flex-direction:column  !important; */
     /* flex: 50%; */
     align-content: center !important;
-    margin: 0px 170px 0px 150px !important;
+    margin: 0px 130px 0px 150px !important;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     text-decoration: none;
@@ -849,7 +851,8 @@ img.drawing {
     position: relative;
     padding: 0% !important;
     transition: all 0.2s ease;
-    flex-wrap: wrap
+    /* flex-wrap: nowrap;
+    white-space: pre-wrap; */
 }
 .nav{
     display:flex !important;
@@ -859,8 +862,7 @@ img.drawing {
     width: 50%;
     padding: 19px 22px;
     margin: 10px;
-    white-space:nowrap;
-    max-width: 140px;
+    max-width: 190px;
 }
 .content-right, .content-left{
     float:right;
@@ -908,9 +910,6 @@ div.content-left{
     padding-right: 20px;
     padding-top: 10px;
     box-sizing: border-box;
-}
-.name{
-    visibility: hidden;
 }
 .box {
     display:flex;
